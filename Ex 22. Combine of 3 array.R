@@ -1,0 +1,8 @@
+a1 <- array(1:9, dim = c(3, 3))
+a2 <- array(10:18, dim = c(3, 3))
+a3 <- array(19:27, dim = c(3, 3))
+print(a1)
+print(a2)
+print(a3)
+a4 <- apply(cbind(a1, a2, a3), 1, function(x) rbind(x[1:3], x[4:6], x[7:9]))
+print(a4)
